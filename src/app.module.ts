@@ -29,7 +29,7 @@ import { ConfigModule } from '@nestjs/config';
     UserModule,
     ClienteModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
