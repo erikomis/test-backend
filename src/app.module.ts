@@ -20,7 +20,7 @@ import { ConfigModule } from '@nestjs/config';
       password: process.env.TYPEORM_PASSWORD,
       database: process.env.TYPEORM_DATABASE,
       synchronize: process.env.TYPEORM_SYNCHRONIZE === 'true',
-      entities: [__dirname + '/../**/*.entity{.ts,.js}'],
+      entities: [__dirname + '/*/.entity{.ts,.js}'],
       migrations: ['./src/database/migrations/*{.ts,.js}'],
     }),
     DatabaseModule,
